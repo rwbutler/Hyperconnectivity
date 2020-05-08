@@ -25,7 +25,7 @@ public class Hyperconnectivity {
     private var pathMonitor: NWPathMonitor?
     internal var reachabilityChanged: ReachabilityChanged?
     
-    public init(configuration: Configuration = Configuration()) {
+    init(configuration: Configuration = Configuration()) {
         self.configuration = configuration
     }
     
