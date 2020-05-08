@@ -17,6 +17,7 @@ Hyperconnectivity is a modern replacement for Reachability written fully in Swif
 	- [Swift Package Manager](#swift-package-manager)
 - [How It Works](#how-it-works)
 - [Usage](#usage)
+- [FAQs](#faqs)
 - [Known Issues](#known-issues)
 - [Author](#author)
 - [License](#license)
@@ -151,6 +152,12 @@ By default, Hyperconnectivity contacts a number of endpoints already used by iOS
 ## Usage
 
 For an example of how to use Hyperconnectivity, see the sample app in the [Example](./Example) directory. The provided example [`UIViewController`](https://github.com/rwbutler/Hyperconnectivity/blob/master/Example/Hyperconnectivity/ViewController.swift) illustrates how the publisher can be used to update your UI.
+
+## FAQs
+
+### Does the release of Hyperconnectivity mean that Connectivity will no longer be supported going forwards?
+
+No, both Connectivity and Hyperconnectivity will be supported in future with improvements in each framework being symbiotic leading to improvement in the other.
 
 ## Known Issues
 
