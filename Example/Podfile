@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Hyperconnectivity_Example' do
+  pod 'Hyperconnectivity', :path => '../'
+
+  target 'Hyperconnectivity_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

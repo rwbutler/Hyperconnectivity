@@ -1,0 +1,22 @@
+{
+  "name": "Hyperconnectivity",
+  "version": "0.1.0",
+  "summary": "A short description of Hyperconnectivity.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Ross Butler/Hyperconnectivity",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Ross Butler": "github@rwbutler.com"
+  },
+  "source": {
+    "git": "https://github.com/Ross Butler/Hyperconnectivity.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "Hyperconnectivity/Classes/**/*"
+}

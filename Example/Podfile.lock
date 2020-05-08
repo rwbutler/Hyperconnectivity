@@ -1,0 +1,16 @@
+PODS:
+  - Hyperconnectivity (0.1.0)
+
+DEPENDENCIES:
+  - Hyperconnectivity (from `../`)
+
+EXTERNAL SOURCES:
+  Hyperconnectivity:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Hyperconnectivity: 42d6cc4a5dde137144478badf599851787b2fc09
+
+PODFILE CHECKSUM: 82ee9662773c5e6c376f7ae6e8cbed54ab9a0717
+
+COCOAPODS: 1.9.1

@@ -1,0 +1,6 @@
+framework module Hyperconnectivity {
+  umbrella header "Hyperconnectivity-umbrella.h"
+
+  export *
+  module * { export * }
+}
