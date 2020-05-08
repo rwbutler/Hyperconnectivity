@@ -33,6 +33,18 @@ Hyperconnectivity is a modern replacement for Reachability written fully in Swif
 
 ## Connectivity vs Hyperconnectivity
 
+Hyperconnectivity is an offshoot of the Connectivity framework so why would you choose Hyperconnectivity over Connectivity? 
+
+### TL;DR
+
+With iOS 14 just around the corner, Hyperconnectivity drops the Objective-C interoperability and support for older versions of iOS provided by Connectivity in order to provide a cleaner, more elegant interface in Swift for those apps who need only support iOS 13 an above. 
+
+Connectivity was designed to provide a familiar API to users of Apple's Reachability which was written in Obj-C and whose designed was heavily influenced by that language. With many recent advancements in the Swift language and introduction of the Network and Combine frameworks in iOS 12 and 13 respectively it felt as though there was an opportunity to provide a 'Swiftier' and more reactive interface at the cost of sacrificing Obj-C compatibility and support for older versions of iOS.
+
+### Feature Comparison
+
+The table below will be updated as future releases of Hyperconnectivity bring the framework towards feature parity with Connectivity.
+
 <div align="center">
     <img src="https://github.com/rwbutler/Hyperconnectivity/raw/master/docs/images/comparison-with-connectivity.png" alt="Comparison with Connectivity Table">
 </div>
