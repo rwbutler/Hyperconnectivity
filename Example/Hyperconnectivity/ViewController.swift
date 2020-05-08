@@ -35,12 +35,7 @@ private extension ViewController {
         cancellable = publisher.receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
             .sink(receiveCompletion: { [weak self] _ in
-                guard let strongSelf = self else {
-                    return
-                }
-                strongSelf.activityIndicator.stopAnimating()
-                strongSelf.isCheckingConnectivity = false
-                strongSelf.updateNotifierButton(isCheckingConnectivity: strongSelf.isCheckingConnectivity)
+                self?.stopConnectivityChecks()
             }, receiveValue: { [weak self] connectivityResult in
                 self?.updateConnectionStatus(connectivityResult)
         })
@@ -62,7 +57,7 @@ private extension ViewController {
 
     func updateNotifierButton(isCheckingConnectivity: Bool) {
         let buttonText = isCheckingConnectivity ? "Stop notifier" : "Start notifier"
-        let buttonTextColor = isCheckingConnectivity ? UIColor.red : UIColor.darkGreen
+        let buttonTextColor: UIColor = isCheckingConnectivity ? .red : .darkGreen
         notifierButton.setTitle(buttonText, for: .normal)
         notifierButton.setTitleColor(buttonTextColor, for: .normal)
     }
