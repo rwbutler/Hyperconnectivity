@@ -2,7 +2,7 @@
 
 [![Version](https://img.shields.io/cocoapods/v/Hyperconnectivity.svg?style=flat)](http://cocoapods.org/pods/Hyperconnectivity)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![License](https://img.shields.io/cocoapods/l/Hyperconnectivity.svg?style=flat)](http://cocoapods.org/pods/Hyperconnectivity)
+[![License](https://img.shields.io/cocoapods/l/Connectivity.svg?style=flat)](http://cocoapods.org/pods/Connectivity)
 [![Platform](https://img.shields.io/cocoapods/p/Hyperconnectivity.svg?style=flat)](http://cocoapods.org/pods/Hyperconnectivity)
 [![Swift 5.0](https://img.shields.io/badge/Swift-5.0-orange.svg?style=flat)](https://swift.org/)
 [![Twitter](https://img.shields.io/badge/twitter-@ross_w_butler-blue.svg?style=flat)](https://twitter.com/ross_w_butler)
