@@ -12,7 +12,7 @@ public struct Percentage: Comparable {
 
     public init(_ value: Double) {
         var result = value < 0.0 ? 0.0 : value
-        result = value > 100.0 ? 100.0 : value
+        result = result > 100.0 ? 100.0 : result
         self.value = result
     }
     
@@ -21,6 +21,10 @@ public struct Percentage: Comparable {
     }
     
     public init(_ value: Double, outOf total: Double) {
+        guard total > 0 else {
+            self.init(0.0)
+            return
+        }
         self.init((value / total) * 100.0)
     }
 
