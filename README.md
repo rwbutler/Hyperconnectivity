@@ -49,7 +49,7 @@ Connectivity was designed to provide a familiar API to users of Apple's Reachabi
 The table below will be updated as future releases of Hyperconnectivity bring the framework towards feature parity with Connectivity.
 
 <div align="center">
-    <img src="https://github.com/rwbutler/Hyperconnectivity/raw/master/docs/images/comparison-with-connectivity.png" alt="Comparison with Connectivity Table">
+    <img src="https://github.com/rwbutler/Hyperconnectivity/raw/master/docs/images/comparison-with-connectivity.png" alt="Comparison with Connectivity Table" width="80%">
 </div>
 
 ## Installation
