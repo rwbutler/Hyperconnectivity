@@ -1,3 +1,11 @@
+//
+//  PercentageTests.swift
+//  Hyperconnectivity
+//
+//  Created by Ross Butler on 09/05/2020.
+//  Copyright © 2020 Ross Butler. All rights reserved.
+//
+
 import XCTest
 @testable import Hyperconnectivity
 
