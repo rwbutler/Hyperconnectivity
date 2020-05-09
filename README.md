@@ -12,6 +12,7 @@
 Hyperconnectivity is a modern replacement for Reachability written fully in Swift and using Apple's [Combine](https://developer.apple.com/documentation/combine) framework. It offers the ability to detect reachability, Internet connectivity as well the presence of [captive portals](https://en.wikipedia.org/wiki/Captive_portal). It is an offshoot of the [Connectivity](https://github.com/rwbutler/Connectivity) project which offers similar features. To find out which one is right for you, take a look at the [Connectivity vs Hyperconnectivity](#connectivity-vs-hyperconnectivity) section below for a comparison.
 
 - [Features](#features)
+- [Quickstart](#quickstart)
 - [Connectivity vs Hyperconnectivity](#connectivity-vs-hyperconnectivity)
 - [Installation](#installation)
 	- [Cocoapods](#cocoapods)
@@ -33,6 +34,23 @@ Hyperconnectivity is a modern replacement for Reachability written fully in Swif
 - [x] Support for Combine [Publishers](https://developer.apple.com/documentation/combine/publisher).
 - [x] Detects Captive Portals when the device joins a network.
 - [x] Detects when connected to a hotspot or router without Internet access.
+
+## Quickstart
+
+Getting started is as simple as subscribing to the provided publisher as follows:
+
+```swift
+cancellable = Hyperconnectivity.Publisher()
+	.receive(on: DispatchQueue.main)
+	.eraseToAnyPublisher()
+	.sink(receiveCompletion: { [weak self] _ in
+		self?.updateUIWhenComplete()
+	}, receiveValue: { [weak self] connectivityResult in
+		self?.updateUI(with: connectivityResult)
+	})
+```
+
+For a full example, see the example [`UIViewController`](https://github.com/rwbutler/Hyperconnectivity/blob/master/Example/Hyperconnectivity/ViewController.swift) in the sample app.
 
 ## Connectivity vs Hyperconnectivity
 
