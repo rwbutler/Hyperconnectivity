@@ -105,7 +105,7 @@ brew update
 brew install carthage
 ```
 
-In order to integrate Connectivity into your project via Carthage, add the following line to your project's Cartfile:
+In order to integrate Hyperconnectivity into your project via Carthage, add the following line to your project's Cartfile:
 
 ```ogdl
 github "rwbutler/Hyperconnectivity"
@@ -117,7 +117,7 @@ For more information [see here](https://github.com/Carthage/Carthage#quick-start
 
 ### Swift Package Manager
 
-Xcode 11 includes support for [Swift Package Manager](https://swift.org/package-manager/). In order to add Connectivity to your project in Xcode 11, from the `File` menu select `Swift Packages` and then select `Add Package Dependency`.
+Xcode 11 includes support for [Swift Package Manager](https://swift.org/package-manager/). In order to add Hyperconnectivity to your project in Xcode 11, from the `File` menu select `Swift Packages` and then select `Add Package Dependency`.
 
 A dialogue will request the package repository URL which is:
 
@@ -131,7 +131,7 @@ After verifying the URL, Xcode will prompt you to select whether to pull a speci
     <img src="https://github.com/rwbutler/Connectivity/raw/master/docs/images/package-options.png" alt="Xcode 11 Package Options" width="80%">
 </div>
 
-Proceed to the next step by where you will be asked to select the package product to integrate into a target. There will be a single package product named `Connectivity` which should be pre-selected. Ensure that your main app target is selected from the rightmost column of the dialog then click Finish to complete the integration.
+Proceed to the next step by where you will be asked to select the package product to integrate into a target. There will be a single package product named `Hyperconnectivity` which should be pre-selected. Ensure that your main app target is selected from the rightmost column of the dialog then click Finish to complete the integration.
 
 <div align="center">
     <img src="https://github.com/rwbutler/Connectivity/raw/master/docs/images/add-package.png" alt="Xcode 11 Add Package" width="80%">
