@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0E0DB5B062AA610A7FB6B2F1 /* Pods_Hyperconnectivity_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5906C1669FAA2FD5D578F683 /* Pods_Hyperconnectivity_Tests.framework */; };
 		134B21BE2466DD5500A8F332 /* ConnectivityStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134B21BC2466DC7200A8F332 /* ConnectivityStateTests.swift */; };
+		134B21C1246877F300A8F332 /* ConnectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134B21BF2468779E00A8F332 /* ConnectionTests.swift */; };
 		13EDCA922465DDFB006FAE75 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EDCA912465DDFB006FAE75 /* UIColor.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		134B21BC2466DC7200A8F332 /* ConnectivityStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivityStateTests.swift; sourceTree = "<group>"; };
+		134B21BF2468779E00A8F332 /* ConnectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionTests.swift; sourceTree = "<group>"; };
 		13EDCA912465DDFB006FAE75 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		3CA628B2EBED9449AB582CF5 /* Pods-Hyperconnectivity_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hyperconnectivity_Tests.release.xcconfig"; path = "Target Support Files/Pods-Hyperconnectivity_Tests/Pods-Hyperconnectivity_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5906C1669FAA2FD5D578F683 /* Pods_Hyperconnectivity_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hyperconnectivity_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +131,7 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				134B21BF2468779E00A8F332 /* ConnectionTests.swift */,
 				134B21BC2466DC7200A8F332 /* ConnectivityStateTests.swift */,
 				607FACEB1AFB9204008FA782 /* PercentageTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
@@ -348,6 +351,7 @@
 			files = (
 				134B21BE2466DD5500A8F332 /* ConnectivityStateTests.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* PercentageTests.swift in Sources */,
+				134B21C1246877F300A8F332 /* ConnectionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

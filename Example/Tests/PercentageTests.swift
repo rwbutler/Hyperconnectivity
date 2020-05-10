@@ -51,4 +51,12 @@ class PercentageTests: XCTestCase {
         XCTAssertEqual(sut.value, 0.0)
     }
     
+    func testPercentageNotLessThanSameValue() {
+        XCTAssertFalse(Percentage(0.0) < Percentage(0.0))
+    }
+    
+    func testPercentageIsLessThanGreaterValue() {
+        XCTAssertTrue(Percentage(0.0) < Percentage(0.1))
+    }
+    
 }

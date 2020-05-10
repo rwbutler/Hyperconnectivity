@@ -71,5 +71,55 @@ class ConnectivityStateTests: XCTestCase {
         let sut = ConnectivityState(connection: .wifi, isConnected: false)
         XCTAssertEqual(sut, .wifiWithoutInternet)
     }
+    
+    func testDescriptionForCellularWithInternetIsCorrect() {
+        let sut = ConnectivityState.cellularWithInternet
+        XCTAssertEqual(sut.description, "Cellular with Internet connectivity")
+    }
+    
+    func testDescriptionForCellularWithoutInternetIsCorrect() {
+        let sut = ConnectivityState.cellularWithoutInternet
+        XCTAssertEqual(sut.description, "Cellular without Internet connectivity")
+    }
+    
+    func testDescriptionForDisconnectedIsCorrect() {
+        let sut = ConnectivityState.disconnected
+        XCTAssertEqual(sut.description, "Disconnected")
+    }
+    
+    func testDescriptionForEthernetWithInternetIsCorrect() {
+        let sut = ConnectivityState.ethernetWithInternet
+        XCTAssertEqual(sut.description, "Ethernet with Internet connectivity")
+    }
+    
+    func testDescriptionForethernetWithoutInternetIsCorrect() {
+        let sut = ConnectivityState.ethernetWithoutInternet
+        XCTAssertEqual(sut.description, "Ethernet without Internet connectivity")
+    }
+    
+    func testDescriptionForLoopbackIsCorrect() {
+        let sut = ConnectivityState.loopback
+        XCTAssertEqual(sut.description, "Loopback")
+    }
+    
+    func testDescriptionForOtherWithInternetIsCorrect() {
+        let sut = ConnectivityState.otherWithInternet
+        XCTAssertEqual(sut.description, "Other with Internet connectivity")
+    }
+    
+    func testDescriptionForOtherWithoutInternetIsCorrect() {
+        let sut = ConnectivityState.otherWithoutInternet
+        XCTAssertEqual(sut.description, "Other without Internet connectivity")
+    }
+    
+    func testDescriptionForWiFiWithInternetIsCorrect() {
+        let sut = ConnectivityState.wifiWithInternet
+        XCTAssertEqual(sut.description, "Wi-Fi with Internet connectivity")
+    }
+    
+    func testDescriptionForWiFiWithoutInternetIsCorrect() {
+        let sut = ConnectivityState.wifiWithoutInternet
+        XCTAssertEqual(sut.description, "Wi-Fi without Internet connectivity")
+    }
 
 }

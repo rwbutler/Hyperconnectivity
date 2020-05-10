@@ -8,6 +8,12 @@
 import Foundation
 import Network
 
+protocol Path {
+    func usesInterfaceType(_ type: NWInterface.InterfaceType) -> Bool
+}
+
+extension NWPath: Path {}
+
 public enum Connection {
     case cellular
     case disconnected
@@ -16,24 +22,7 @@ public enum Connection {
     case other
     case wifi
     
-    init(_ interfaceType: NWInterface.InterfaceType) {
-        switch interfaceType {
-        case .cellular:
-            self = .cellular
-        case .loopback:
-            self = .loopback
-        case .other:
-            self = .other
-        case .wifi:
-            self = .wifi
-        case .wiredEthernet:
-            self = .ethernet
-        @unknown default:
-            self = .other
-        }
-    }
-    
-    init(_ path: NWPath) {
+    init(_ path: Path) {
         if path.usesInterfaceType(.wiredEthernet) {
             self = .ethernet
         } else if path.usesInterfaceType(.wifi) {
