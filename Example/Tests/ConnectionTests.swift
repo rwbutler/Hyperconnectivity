@@ -11,18 +11,6 @@ import Network
 import XCTest
 @testable import Hyperconnectivity
 
-struct MockPath: Path {
-    private let interfaceType: NWInterface.InterfaceType?
-    
-    init(interfaceType: NWInterface.InterfaceType?) {
-        self.interfaceType = interfaceType
-    }
-    
-    func usesInterfaceType(_ type: NWInterface.InterfaceType) -> Bool {
-        return interfaceType == type
-    }
-}
-
 class ConnectionTests: XCTestCase {
     
     func testIfPathIsWiredEthernetThenConnectionIsEthernet() {

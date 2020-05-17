@@ -9,6 +9,7 @@ import Foundation
 import Network
 
 protocol Path {
+    var isExpensive: Bool { get }
     func usesInterfaceType(_ type: NWInterface.InterfaceType) -> Bool
 }
 

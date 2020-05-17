@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13962F0C247064A000CCE8B9 /* Notification.Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13962F0B247064A000CCE8B9 /* Notification.Name.swift */; };
 		13EDCA9B2465E545006FAE75 /* Percentage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EDCA942465E545006FAE75 /* Percentage.swift */; };
 		13EDCA9C2465E545006FAE75 /* ConnectivityState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EDCA952465E545006FAE75 /* ConnectivityState.swift */; };
 		13EDCA9D2465E545006FAE75 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EDCA962465E545006FAE75 /* Connection.swift */; };
 		13EDCA9E2465E545006FAE75 /* ConnectivityResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EDCA972465E545006FAE75 /* ConnectivityResult.swift */; };
 		13EDCA9F2465E545006FAE75 /* ReachabilityResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EDCA982465E545006FAE75 /* ReachabilityResult.swift */; };
-		13EDCAA02465E545006FAE75 /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EDCA992465E545006FAE75 /* Operation.swift */; };
 		13EDCAA12465E545006FAE75 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EDCA9A2465E545006FAE75 /* Configuration.swift */; };
 		13EDCAA42465E557006FAE75 /* Hyperconnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EDCAA32465E557006FAE75 /* Hyperconnectivity.swift */; };
 		13EDCAAB2465E565006FAE75 /* ResponseRegExValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EDCAA62465E564006FAE75 /* ResponseRegExValidator.swift */; };
@@ -59,12 +59,12 @@
 		0581BDD34FB9FDBA68BBC36CFBEA7160 /* Pods-Hyperconnectivity_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hyperconnectivity_Example-frameworks.sh"; sourceTree = "<group>"; };
 		06FA87DD4C4830440542A4B06868F315 /* Pods-Hyperconnectivity_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hyperconnectivity_Example-Info.plist"; sourceTree = "<group>"; };
 		133F72999A46E9B995952701D992105E /* Pods-Hyperconnectivity_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hyperconnectivity_Tests-dummy.m"; sourceTree = "<group>"; };
+		13962F0B247064A000CCE8B9 /* Notification.Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.Name.swift; sourceTree = "<group>"; };
 		13EDCA942465E545006FAE75 /* Percentage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Percentage.swift; sourceTree = "<group>"; };
 		13EDCA952465E545006FAE75 /* ConnectivityState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectivityState.swift; sourceTree = "<group>"; };
 		13EDCA962465E545006FAE75 /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
 		13EDCA972465E545006FAE75 /* ConnectivityResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectivityResult.swift; sourceTree = "<group>"; };
 		13EDCA982465E545006FAE75 /* ReachabilityResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityResult.swift; sourceTree = "<group>"; };
-		13EDCA992465E545006FAE75 /* Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
 		13EDCA9A2465E545006FAE75 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		13EDCAA32465E557006FAE75 /* Hyperconnectivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hyperconnectivity.swift; sourceTree = "<group>"; };
 		13EDCAA62465E564006FAE75 /* ResponseRegExValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseRegExValidator.swift; sourceTree = "<group>"; };
@@ -142,8 +142,8 @@
 				13EDCA962465E545006FAE75 /* Connection.swift */,
 				13EDCA972465E545006FAE75 /* ConnectivityResult.swift */,
 				13EDCA982465E545006FAE75 /* ReachabilityResult.swift */,
-				13EDCA992465E545006FAE75 /* Operation.swift */,
 				13EDCA9A2465E545006FAE75 /* Configuration.swift */,
+				13962F0B247064A000CCE8B9 /* Notification.Name.swift */,
 			);
 			name = Model;
 			path = Hyperconnectivity/Classes/Model;
@@ -475,12 +475,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13962F0C247064A000CCE8B9 /* Notification.Name.swift in Sources */,
 				13EDCA9E2465E545006FAE75 /* ConnectivityResult.swift in Sources */,
 				13EDCAA12465E545006FAE75 /* Configuration.swift in Sources */,
 				13EDCAA42465E557006FAE75 /* Hyperconnectivity.swift in Sources */,
 				13EDCAD02465E5D2006FAE75 /* ReachabilitySubscription.swift in Sources */,
 				13EDCACD2465E5D2006FAE75 /* Publishers.swift in Sources */,
-				13EDCAA02465E545006FAE75 /* Operation.swift in Sources */,
 				13EDCACE2465E5D2006FAE75 /* ReachabilityPublisher.swift in Sources */,
 				13EDCAAF2465E565006FAE75 /* ResponseContainsStringValidator.swift in Sources */,
 				13EDCAAB2465E565006FAE75 /* ResponseRegExValidator.swift in Sources */,

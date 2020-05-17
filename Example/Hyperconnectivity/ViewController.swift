@@ -44,8 +44,8 @@ private extension ViewController {
     }
     
     func stopConnectivityChecks() {
-        activityIndicator.stopAnimating()
         cancellable?.cancel()
+        activityIndicator.stopAnimating()
         isCheckingConnectivity = false
         updateNotifierButton(isCheckingConnectivity: isCheckingConnectivity)
     }

@@ -22,10 +22,11 @@ public class Hyperconnectivity {
     private var cancellable: AnyCancellable?
     private let configuration: Configuration
     internal var connectivityChanged: ConnectivityChanged?
+    private let notifier = NotificationCenter.default
     private var pathMonitor: NWPathMonitor?
     internal var reachabilityChanged: ReachabilityChanged?
     
-    init(configuration: Configuration = Configuration()) {
+    required init(configuration: Configuration = Configuration()) {
         self.configuration = configuration
     }
     
@@ -42,12 +43,14 @@ public class Hyperconnectivity {
             }
         }
         self.pathMonitor = pathMonitor
+        notifier.post(name: .ConnectivityDidStart, object: nil)
         pathMonitor.start(queue: configuration.connectivityQueue)
     }
     
     func stopNotifier() {
         cancellable?.cancel()
         cancellable = nil
+        notifier.post(name: .ConnectivityDidFinish, object: nil)
         pathMonitor = nil
     }
 }
@@ -60,16 +63,21 @@ private extension Hyperconnectivity {
         let totalChecks = UInt(configuration.connectivityURLs.count)
         let result = ConnectivityResult(path: path, successThreshold: configuration.successThreshold, totalChecks: totalChecks)
         let combinedPublisher = Publishers.MergeMany(publishers)
-        cancellable =  combinedPublisher.sink(receiveCompletion:{ _ in
-            self.connectivityChanged?(result)
-        }, receiveValue: { response in
+        cancellable =  combinedPublisher.sink(receiveCompletion:{ [weak self] _ in
+            self?.connectivityChanged(result)
+        }, receiveValue: { [weak self] response in
             result.connectivityCheck(successful: configuration.isResponseValid(response))
             guard result.isConnected else {
                 return
             }
-            self.connectivityChanged?(result)
-            self.cancellable?.cancel()
+            self?.connectivityChanged(result)
         })
+    }
+    
+    private func connectivityChanged(_ result: ConnectivityResult) {
+        connectivityChanged?(result)
+        cancellable?.cancel()
+        notifier.post(name: .ConnectivityDidChange, object: result)
     }
     
     private func handleReachability(for path: NWPath) {

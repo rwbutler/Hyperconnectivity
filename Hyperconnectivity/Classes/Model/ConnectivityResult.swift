@@ -24,7 +24,7 @@ public class ConnectivityResult {
         Percentage(successfulChecks, outOf: totalChecks)
     }
     
-    init(path: NWPath, successThreshold: Percentage, totalChecks: UInt) {
+    init(path: Path, successThreshold: Percentage, totalChecks: UInt) {
         connection = Connection(path)
         isExpensive = path.isExpensive
         self.successThreshold = successThreshold
