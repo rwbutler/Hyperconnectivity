@@ -1,16 +1,35 @@
 PODS:
-  - Hyperconnectivity (0.1.0)
+  - Hyperconnectivity (0.2.0)
+  - OHHTTPStubs/Core (9.0.0)
+  - OHHTTPStubs/Default (9.0.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (9.0.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (9.0.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (9.0.0)
+  - OHHTTPStubs/Swift (9.0.0):
+    - OHHTTPStubs/Default
 
 DEPENDENCIES:
   - Hyperconnectivity (from `../`)
+  - OHHTTPStubs/Swift
+
+SPEC REPOS:
+  trunk:
+    - OHHTTPStubs
 
 EXTERNAL SOURCES:
   Hyperconnectivity:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Hyperconnectivity: 42d6cc4a5dde137144478badf599851787b2fc09
+  Hyperconnectivity: f5b809bc35e0315a1965f7b2895dfd66b3b0862a
+  OHHTTPStubs: cb29d2a9d09a828ecb93349a2b0c64f99e0db89f
 
-PODFILE CHECKSUM: 82ee9662773c5e6c376f7ae6e8cbed54ab9a0717
+PODFILE CHECKSUM: c0022d9b2bf93345388e8d49b7dbb6ff97498bc5
 
 COCOAPODS: 1.9.1
