@@ -20,6 +20,8 @@
 		13962F1E24719EF600CCE8B9 /* string-equality-response.html in Resources */ = {isa = PBXBuildFile; fileRef = 13962F1D24719EF600CCE8B9 /* string-equality-response.html */; };
 		13962F1F24719F1400CCE8B9 /* string-equality-response.html in Resources */ = {isa = PBXBuildFile; fileRef = 13962F1D24719EF600CCE8B9 /* string-equality-response.html */; };
 		13962F2024719F1700CCE8B9 /* string-contains-response.html in Resources */ = {isa = PBXBuildFile; fileRef = 13962F1B24719EDE00CCE8B9 /* string-contains-response.html */; };
+		13962F232471AA1600CCE8B9 /* ConnectivityPublisherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13962F222471AA1600CCE8B9 /* ConnectivityPublisherTests.swift */; };
+		13962F252471B48700CCE8B9 /* failure-response.html in Resources */ = {isa = PBXBuildFile; fileRef = 13962F242471B48700CCE8B9 /* failure-response.html */; };
 		13EDCA922465DDFB006FAE75 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EDCA912465DDFB006FAE75 /* UIColor.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -51,6 +53,8 @@
 		13962F19247196F800CCE8B9 /* ResponseContainsStringValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseContainsStringValidatorTests.swift; sourceTree = "<group>"; };
 		13962F1B24719EDE00CCE8B9 /* string-contains-response.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "string-contains-response.html"; sourceTree = "<group>"; };
 		13962F1D24719EF600CCE8B9 /* string-equality-response.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "string-equality-response.html"; sourceTree = "<group>"; };
+		13962F222471AA1600CCE8B9 /* ConnectivityPublisherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivityPublisherTests.swift; sourceTree = "<group>"; };
+		13962F242471B48700CCE8B9 /* failure-response.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "failure-response.html"; sourceTree = "<group>"; };
 		13EDCA912465DDFB006FAE75 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		3CA628B2EBED9449AB582CF5 /* Pods-Hyperconnectivity_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hyperconnectivity_Tests.release.xcconfig"; path = "Target Support Files/Pods-Hyperconnectivity_Tests/Pods-Hyperconnectivity_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5906C1669FAA2FD5D578F683 /* Pods_Hyperconnectivity_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hyperconnectivity_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +104,16 @@
 				13962F11247191B000CCE8B9 /* MockPath.swift */,
 			);
 			name = Mocks;
+			sourceTree = "<group>";
+		};
+		13962F212471A95F00CCE8B9 /* Response Validation Tests */ = {
+			isa = PBXGroup;
+			children = (
+				13962F152471968300CCE8B9 /* ResponseRegExValidatorTests.swift */,
+				13962F17247196AE00CCE8B9 /* ResponseStringEqualityValidatorTests.swift */,
+				13962F19247196F800CCE8B9 /* ResponseContainsStringValidatorTests.swift */,
+			);
+			name = "Response Validation Tests";
 			sourceTree = "<group>";
 		};
 		14C962730214B1D82672F6D3 /* Frameworks */ = {
@@ -158,14 +172,13 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				13962F212471A95F00CCE8B9 /* Response Validation Tests */,
 				13962F102471919F00CCE8B9 /* Mocks */,
 				134B21BF2468779E00A8F332 /* ConnectionTests.swift */,
 				134B21BC2466DC7200A8F332 /* ConnectivityStateTests.swift */,
 				607FACEB1AFB9204008FA782 /* PercentageTests.swift */,
 				13962F09246F3F7300CCE8B9 /* ConnectivitySubscriptionTests.swift */,
-				13962F152471968300CCE8B9 /* ResponseRegExValidatorTests.swift */,
-				13962F17247196AE00CCE8B9 /* ResponseStringEqualityValidatorTests.swift */,
-				13962F19247196F800CCE8B9 /* ResponseContainsStringValidatorTests.swift */,
+				13962F222471AA1600CCE8B9 /* ConnectivityPublisherTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -177,6 +190,7 @@
 				607FACEA1AFB9204008FA782 /* Info.plist */,
 				13962F1B24719EDE00CCE8B9 /* string-contains-response.html */,
 				13962F1D24719EF600CCE8B9 /* string-equality-response.html */,
+				13962F242471B48700CCE8B9 /* failure-response.html */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -301,6 +315,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13962F252471B48700CCE8B9 /* failure-response.html in Resources */,
 				13962F1F24719F1400CCE8B9 /* string-equality-response.html in Resources */,
 				13962F2024719F1700CCE8B9 /* string-contains-response.html in Resources */,
 			);
@@ -408,6 +423,7 @@
 			files = (
 				134B21BE2466DD5500A8F332 /* ConnectivityStateTests.swift in Sources */,
 				13962F12247191B000CCE8B9 /* MockPath.swift in Sources */,
+				13962F232471AA1600CCE8B9 /* ConnectivityPublisherTests.swift in Sources */,
 				13962F142471929500CCE8B9 /* MockConnectivity.swift in Sources */,
 				13962F0A246F3F7300CCE8B9 /* ConnectivitySubscriptionTests.swift in Sources */,
 				13962F1A247196F800CCE8B9 /* ResponseContainsStringValidatorTests.swift in Sources */,

@@ -41,6 +41,22 @@ class ResponseStringEqualityValidatorTests: XCTestCase {
         wait(for: [expectation], timeout: timeout)
         connectivity.stopNotifier()
     }
+    
+    /// Test response is valid when the response string is equal to the expected response.
+    func testEqualsExpectedSpecifiedResponseString() throws {
+        try stubHost("www.apple.com", withHTMLFrom: "string-equality-response.html")
+        let expectation = XCTestExpectation(description: "Connectivity check succeeds")
+        let config = Hyperconnectivity.Configuration(responseValidator: ResponseStringEqualityValidator(expectedResponse: "Success"))
+        let connectivity = Hyperconnectivity(configuration: config)
+        let connectivityChanged: (ConnectivityResult) -> Void = { result in
+            XCTAssert(result.state == .wifiWithInternet)
+            expectation.fulfill()
+        }
+        connectivity.connectivityChanged = connectivityChanged
+        connectivity.startNotifier()
+        wait(for: [expectation], timeout: timeout)
+        connectivity.stopNotifier()
+    }
 
     /// Test response is invalid when the response string is not equal to the expected response.
     func testNotEqualsExpectedResponseString() throws {
