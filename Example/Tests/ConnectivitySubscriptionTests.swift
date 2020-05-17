@@ -13,7 +13,6 @@ import XCTest
 @testable import Hyperconnectivity
 
 class ConnectivitySubscriptionTests: XCTestCase {
-    
     private let timeout: TimeInterval = 5.0
     
     private func sut(subscriber: Subscribers.Sink<ConnectivityResult, Never>? = nil, connectivity: Connectivity? = nil) -> ConnectivitySubscription<Subscribers.Sink<ConnectivityResult, Never>> {

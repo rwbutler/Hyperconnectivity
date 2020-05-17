@@ -14,7 +14,7 @@ class ReachabilitySubscription<S: Subscriber>: Subscription where S.Input == Rea
     private var subscriber: S?
 
     init(configuration: Hyperconnectivity.Configuration, subscriber: S) {
-        self.configuration = configuration
+        self.configuration = configuration.cloneForReachability()
         self.subscriber = subscriber
         startNotifier(with: subscriber)
     }
@@ -40,6 +40,7 @@ private extension ReachabilitySubscription {
     private func stopNotifier() {
         connectivity?.stopNotifier()
         connectivity = nil
+        subscriber?.receive(completion: Subscribers.Completion<Never>.finished)
         subscriber = nil
     }
 }

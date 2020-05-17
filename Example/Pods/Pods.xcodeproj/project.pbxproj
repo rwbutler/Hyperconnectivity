@@ -87,7 +87,7 @@
 		053D11B7D73CF7BBCDF43E9700F9B90E /* ConnectivitySubscription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConnectivitySubscription.swift; sourceTree = "<group>"; };
 		05795D80F7ADBF5F4A6F778B7729A2F6 /* HTTPStubsPathHelpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTTPStubsPathHelpers.m; path = Sources/OHHTTPStubs/HTTPStubsPathHelpers.m; sourceTree = "<group>"; };
 		179D4DB955D6AC3900B45340DC1B3C34 /* Hyperconnectivity-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Hyperconnectivity-prefix.pch"; sourceTree = "<group>"; };
-		17E33041B314FA837A3CAEB9DF3CDE9F /* OHHTTPStubs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OHHTTPStubs.framework; path = OHHTTPStubs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17E33041B314FA837A3CAEB9DF3CDE9F /* OHHTTPStubs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OHHTTPStubs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AC9AAE6418AF877A38D1FDCBC620BE5 /* NSURLRequest+HTTPBodyTesting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLRequest+HTTPBodyTesting.h"; path = "Sources/OHHTTPStubs/include/NSURLRequest+HTTPBodyTesting.h"; sourceTree = "<group>"; };
 		1DDC31213D773CC32C814301205789A1 /* Hyperconnectivity-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Hyperconnectivity-Info.plist"; sourceTree = "<group>"; };
 		1EA7A0DF098EAF45B066AE098AD25275 /* Pods-Hyperconnectivity_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hyperconnectivity_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -98,7 +98,7 @@
 		30A4CC96C037900E078D3A990DE797E0 /* Network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Network.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Network.framework; sourceTree = DEVELOPER_DIR; };
 		337B66C3878858D5EEAD02A77062BB5A /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		34B286CFEF5C91E4AA477AA343C22372 /* Pods-Hyperconnectivity_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hyperconnectivity_Example-Info.plist"; sourceTree = "<group>"; };
-		3C7D6CFAE7F76F9EE3685D4C948825E8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		3C7D6CFAE7F76F9EE3685D4C948825E8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		444D43335D402FE711DD910A20491CFB /* HTTPStubs+NSURLSessionConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "HTTPStubs+NSURLSessionConfiguration.m"; path = "Sources/OHHTTPStubs/HTTPStubs+NSURLSessionConfiguration.m"; sourceTree = "<group>"; };
 		47996ECC3F3C0091DF67E18683D77AEA /* HTTPStubs.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTTPStubs.m; path = Sources/OHHTTPStubs/HTTPStubs.m; sourceTree = "<group>"; };
 		4BAC86218E0E2E14BC573C3AC41F5C81 /* Pods-Hyperconnectivity_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hyperconnectivity_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -111,15 +111,15 @@
 		5CEC6CB5CED75CC2FC24115BD0BDAD6B /* OHHTTPStubs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OHHTTPStubs.release.xcconfig; sourceTree = "<group>"; };
 		636DF3058B92AF46A526983B670D61A7 /* Publishers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Publishers.swift; sourceTree = "<group>"; };
 		6901745544A72844F752AF8F91FCD563 /* hyperconnectivity-banner.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "hyperconnectivity-banner.png"; path = "docs/images/hyperconnectivity-banner.png"; sourceTree = "<group>"; };
-		6B7DCD250B25735AAC46EDE7EC95305D /* Hyperconnectivity.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Hyperconnectivity.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6B7DCD250B25735AAC46EDE7EC95305D /* Hyperconnectivity.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Hyperconnectivity.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6BF767C709E555CAD026886FC65A6E34 /* ConnectivityState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConnectivityState.swift; sourceTree = "<group>"; };
-		6DA81334B924ACAC5303B1CEB9330271 /* hyperconnectivity-banner.afdesign */ = {isa = PBXFileReference; includeInIndex = 1; name = "hyperconnectivity-banner.afdesign"; path = "docs/images/hyperconnectivity-banner.afdesign"; sourceTree = "<group>"; };
+		6DA81334B924ACAC5303B1CEB9330271 /* hyperconnectivity-banner.afdesign */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "hyperconnectivity-banner.afdesign"; path = "docs/images/hyperconnectivity-banner.afdesign"; sourceTree = "<group>"; };
 		7138276606AC8675B64B81D61626A25F /* Hyperconnectivity-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Hyperconnectivity-umbrella.h"; sourceTree = "<group>"; };
 		72468E28AE8E4A1C954928A810C29633 /* HTTPStubsResponse+JSON.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "HTTPStubsResponse+JSON.m"; path = "Sources/OHHTTPStubs/HTTPStubsResponse+JSON.m"; sourceTree = "<group>"; };
 		736A8A782D7E9DD56B2D71B6B6BDE130 /* OHHTTPStubsSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OHHTTPStubsSwift.swift; path = Sources/OHHTTPStubsSwift/OHHTTPStubsSwift.swift; sourceTree = "<group>"; };
 		76ECE6049BBB7D8EC1A83DB3C317321F /* HTTPStubsPathHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTTPStubsPathHelpers.h; path = Sources/OHHTTPStubs/include/HTTPStubsPathHelpers.h; sourceTree = "<group>"; };
 		7733FD4A1A3AB538B245BD517B663B28 /* HTTPStubsMethodSwizzling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTTPStubsMethodSwizzling.h; path = Sources/OHHTTPStubs/HTTPStubsMethodSwizzling.h; sourceTree = "<group>"; };
-		87158F2B91F50DDDEE53E2F37D37E949 /* comparison-with-connectivity.graffle */ = {isa = PBXFileReference; includeInIndex = 1; name = "comparison-with-connectivity.graffle"; path = "docs/images/comparison-with-connectivity.graffle"; sourceTree = "<group>"; };
+		87158F2B91F50DDDEE53E2F37D37E949 /* comparison-with-connectivity.graffle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "comparison-with-connectivity.graffle"; path = "docs/images/comparison-with-connectivity.graffle"; sourceTree = "<group>"; };
 		8752ED48BF48F46C57381CD46FB0C493 /* HTTPStubsResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTTPStubsResponse.m; path = Sources/OHHTTPStubs/HTTPStubsResponse.m; sourceTree = "<group>"; };
 		87993037B36995B389B337107260CA9F /* Hyperconnectivity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Hyperconnectivity.debug.xcconfig; sourceTree = "<group>"; };
 		8E8F87888190219C69EEDBF9BF1848ED /* HTTPStubsResponse+JSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "HTTPStubsResponse+JSON.h"; path = "Sources/OHHTTPStubs/include/HTTPStubsResponse+JSON.h"; sourceTree = "<group>"; };
@@ -129,7 +129,7 @@
 		94707DE30C4D3C1B7F35540E121A89B9 /* Pods-Hyperconnectivity_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hyperconnectivity_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		96B09F70D8318D3B3C6B25589AAE9933 /* OHHTTPStubs-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OHHTTPStubs-dummy.m"; sourceTree = "<group>"; };
 		9A5A7EE20E4606C0657AD4E9366570F0 /* ResponseRegExValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ResponseRegExValidator.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A1A873E30AC116CB02ADD7276CE63A9B /* ResponseStringEqualityValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ResponseStringEqualityValidator.swift; sourceTree = "<group>"; };
 		A7922776CF9368A95AC803E59C87094A /* Pods-Hyperconnectivity_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hyperconnectivity_Example-umbrella.h"; sourceTree = "<group>"; };
 		A81596E242B9E114FAA1C4A1CACD911E /* Pods-Hyperconnectivity_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Hyperconnectivity_Tests.modulemap"; sourceTree = "<group>"; };
@@ -139,16 +139,16 @@
 		BF3F66B3E0CF91C536869F9EBF7D7D82 /* OHHTTPStubs.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OHHTTPStubs.modulemap; sourceTree = "<group>"; };
 		C228F176D1218B17D2531CEE1E4A1841 /* Pods-Hyperconnectivity_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hyperconnectivity_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C5B3FA0599D0A7C417BA046810CD61AD /* Hyperconnectivity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Hyperconnectivity.swift; sourceTree = "<group>"; };
-		C5BCC19A35DAC668A16A53E98380B242 /* hyperconnectivity-logo.afdesign */ = {isa = PBXFileReference; includeInIndex = 1; name = "hyperconnectivity-logo.afdesign"; path = "docs/images/hyperconnectivity-logo.afdesign"; sourceTree = "<group>"; };
+		C5BCC19A35DAC668A16A53E98380B242 /* hyperconnectivity-logo.afdesign */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "hyperconnectivity-logo.afdesign"; path = "docs/images/hyperconnectivity-logo.afdesign"; sourceTree = "<group>"; };
 		C8DE7546074FDF481FAF83BB45571D2B /* ResponseValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ResponseValidator.swift; sourceTree = "<group>"; };
-		C97B510A7D3FE7228E2A0710C429F6E7 /* Pods_Hyperconnectivity_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Hyperconnectivity_Tests.framework; path = "Pods-Hyperconnectivity_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C97B510A7D3FE7228E2A0710C429F6E7 /* Pods_Hyperconnectivity_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hyperconnectivity_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB96ACE59DFEF32EB746B8B5C21C9E6B /* Pods-Hyperconnectivity_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hyperconnectivity_Tests-Info.plist"; sourceTree = "<group>"; };
-		CC9E48909A522B49B24B2F049264E731 /* Hyperconnectivity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Hyperconnectivity.framework; path = Hyperconnectivity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC9E48909A522B49B24B2F049264E731 /* Hyperconnectivity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hyperconnectivity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCFF9E21458CBB990302388AAC721FEF /* ResponseContainsStringValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ResponseContainsStringValidator.swift; sourceTree = "<group>"; };
 		CD220818A23936E2AB3394735DD1D124 /* OHHTTPStubs-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OHHTTPStubs-umbrella.h"; sourceTree = "<group>"; };
 		D1233D20896561397787188965775C36 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D75EA0CABEC546B520B4ACECA171ED9A /* Pods-Hyperconnectivity_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hyperconnectivity_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		D7C5DFAE6E92FB59A53EB41153DCAB2F /* Pods_Hyperconnectivity_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Hyperconnectivity_Example.framework; path = "Pods-Hyperconnectivity_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7C5DFAE6E92FB59A53EB41153DCAB2F /* Pods_Hyperconnectivity_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hyperconnectivity_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7F30CE024D2EADE2364EA5F8CF8EC59 /* ConnectivityResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConnectivityResult.swift; sourceTree = "<group>"; };
 		D8271BE9485D327CBECA394306611B48 /* OHHTTPStubs-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "OHHTTPStubs-Info.plist"; sourceTree = "<group>"; };
 		D8DAAB3AA259BAA87D0CE56BACDA2AD6 /* Pods-Hyperconnectivity_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hyperconnectivity_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -158,7 +158,7 @@
 		DF099818E9E7284AE96AE098C1740C56 /* comparison-with-connectivity.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "comparison-with-connectivity.png"; path = "docs/images/comparison-with-connectivity.png"; sourceTree = "<group>"; };
 		E5974C8DE7AE7FF6FE92CAA0263F48E5 /* Pods-Hyperconnectivity_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hyperconnectivity_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		ED22765F073D19E4C1C2BCB7E81723DC /* Pods-Hyperconnectivity_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hyperconnectivity_Example.release.xcconfig"; sourceTree = "<group>"; };
-		F21F638E8A79544E121AADA8D8ED1D85 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F21F638E8A79544E121AADA8D8ED1D85 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		F49B3BAF34EF424D8418DEDB4B2C1964 /* Hyperconnectivity-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Hyperconnectivity-dummy.m"; sourceTree = "<group>"; };
 		F9EF3A68A47550BC06977140CBCF2B57 /* Hyperconnectivity.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Hyperconnectivity.modulemap; sourceTree = "<group>"; };
 		FA9104B13FA4CDFA3B9E98F37F21ED3F /* HTTPStubsResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTTPStubsResponse.h; path = Sources/OHHTTPStubs/include/HTTPStubsResponse.h; sourceTree = "<group>"; };
@@ -345,7 +345,6 @@
 				EF81891485D5AFBA5E33C1B67A5433FD /* Support Files */,
 				0389F2F489917D675F66FA48F47E9C27 /* Swift */,
 			);
-			name = OHHTTPStubs;
 			path = OHHTTPStubs;
 			sourceTree = "<group>";
 		};
@@ -608,7 +607,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1140;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -749,7 +748,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 87993037B36995B389B337107260CA9F /* Hyperconnectivity.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -765,7 +763,9 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.0.0;
 				MODULEMAP_FILE = "Target Support Files/Hyperconnectivity/Hyperconnectivity.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rwbutler.Hyperconnectivity;
 				PRODUCT_MODULE_NAME = Hyperconnectivity;
 				PRODUCT_NAME = Hyperconnectivity;
 				SDKROOT = iphoneos;
@@ -831,8 +831,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -843,7 +842,6 @@
 			baseConfigurationReference = D75EA0CABEC546B520B4ACECA171ED9A /* Pods-Hyperconnectivity_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -878,7 +876,6 @@
 			baseConfigurationReference = ED22765F073D19E4C1C2BCB7E81723DC /* Pods-Hyperconnectivity_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -913,7 +910,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FE683674D6039F16F55A1797F2CD0AA6 /* Hyperconnectivity.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -929,7 +925,9 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.0.0;
 				MODULEMAP_FILE = "Target Support Files/Hyperconnectivity/Hyperconnectivity.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rwbutler.Hyperconnectivity;
 				PRODUCT_MODULE_NAME = Hyperconnectivity;
 				PRODUCT_NAME = Hyperconnectivity;
 				SDKROOT = iphoneos;
@@ -947,7 +945,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5CEC6CB5CED75CC2FC24115BD0BDAD6B /* OHHTTPStubs.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -980,7 +977,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8EC3488DA660920038760CC2C11CB1DA /* OHHTTPStubs.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1013,7 +1009,6 @@
 			baseConfigurationReference = 297188B7E204CF553568013790D614A4 /* Pods-Hyperconnectivity_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1048,7 +1043,6 @@
 			baseConfigurationReference = C228F176D1218B17D2531CEE1E4A1841 /* Pods-Hyperconnectivity_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

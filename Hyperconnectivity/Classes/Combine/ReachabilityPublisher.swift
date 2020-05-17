@@ -19,7 +19,7 @@ public struct ReachabilityPublisher: Publisher {
     private let configuration: Configuration
     
     public init(configuration: Configuration = Configuration()) {
-        self.configuration = configuration
+        self.configuration = configuration.cloneForReachability()
     }
     
     public func receive<S>(subscriber: S) where S : Subscriber, Self.Failure == S.Failure, Self.Output == S.Input {

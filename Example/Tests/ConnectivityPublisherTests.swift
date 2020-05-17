@@ -13,8 +13,8 @@ import XCTest
 @testable import Hyperconnectivity
 
 class ConnectivityPublisherTests: XCTestCase {
-    
     private var cancellable: AnyCancellable?
+    private let timeout: TimeInterval = 5.0
     
     override func tearDown() {
         super.tearDown()
@@ -38,7 +38,7 @@ class ConnectivityPublisherTests: XCTestCase {
             XCTAssertEqual(result.state, .wifiWithInternet)
             expectation.fulfill()
         })
-        wait(for: [expectation], timeout: 2.0)
+        wait(for: [expectation], timeout: timeout)
     }
     
     func testSubscriberInvokedOnFailedConnectivityCheck() throws {
@@ -51,6 +51,6 @@ class ConnectivityPublisherTests: XCTestCase {
             XCTAssertEqual(result.state, .wifiWithoutInternet)
             expectation.fulfill()
         })
-        wait(for: [expectation], timeout: 2.0)
+        wait(for: [expectation], timeout: timeout)
     }
 }
