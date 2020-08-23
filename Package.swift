@@ -4,7 +4,10 @@ import PackageDescription
 let package = Package(
     name: "Hyperconnectivity",
     platforms: [
-        .iOS("13.0")
+        .iOS(.v13),
+        .tvOS(.v13),
+        .macOS(.v10_15),
+        .watchOS(.v6)
     ],
     products: [
         .library(
