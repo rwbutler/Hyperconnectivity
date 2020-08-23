@@ -3,8 +3,8 @@
 [![Version](https://img.shields.io/cocoapods/v/Hyperconnectivity.svg?style=flat)](http://cocoapods.org/pods/Hyperconnectivity)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/Connectivity.svg?style=flat)](http://cocoapods.org/pods/Connectivity)
-[![Platform](https://img.shields.io/cocoapods/p/Hyperconnectivity.svg?style=flat)](http://cocoapods.org/pods/Hyperconnectivity)
-[![Swift 5.0](https://img.shields.io/badge/Swift-5.0-orange.svg?style=flat)](https://swift.org/)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Frwbutler%2FHyperconnectivity%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/rwbutler/Hyperconnectivity)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Frwbutler%2FHyperconnectivity%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/rwbutler/Hyperconnectivity)
 [![Twitter](https://img.shields.io/badge/twitter-@ross_w_butler-blue.svg?style=flat)](https://twitter.com/ross_w_butler)
 
 Hyperconnectivity is a modern replacement for Reachability written fully in Swift and using Apple's [Combine](https://developer.apple.com/documentation/combine) framework. It offers the ability to detect reachability, Internet connectivity as well the presence of [captive portals](https://en.wikipedia.org/wiki/Captive_portal). It is an offshoot of the [Connectivity](https://github.com/rwbutler/Connectivity) project which offers similar features. To find out which one is right for you, take a look at the [Connectivity vs Hyperconnectivity](#connectivity-vs-hyperconnectivity) section below for a comparison.

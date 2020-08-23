@@ -10,9 +10,9 @@ import Network
 
 public struct ReachabilityResult {
     
-    let connection: Connection
-    let isExpensive: Bool
-    let isReachable: Bool
+    public let connection: Connection
+    public let isExpensive: Bool
+    public let isReachable: Bool
     
     init(path: NWPath) {
         connection = Connection(path)
