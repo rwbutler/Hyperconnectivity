@@ -57,8 +57,13 @@ public class Hyperconnectivity {
 
 private extension Hyperconnectivity {
     private func checkConnectivity(of path: NWPath, using configuration: Configuration) {
+        // Ensure that we never use cached results, including with custom `URLSessionConfiguration`s.
+        let urlSessionConfiguration = configuration.urlSessionConfiguration.copy() as! URLSessionConfiguration
+        urlSessionConfiguration.requestCachePolicy = .reloadIgnoringCacheData
+        urlSessionConfiguration.urlCache = nil
+        
         let publishers = configuration.connectivityURLs.map { url in
-            URLSession(configuration: configuration.urlSessionConfiguration).dataTaskPublisher(for: url)
+            URLSession(configuration: urlSessionConfiguration).dataTaskPublisher(for: url)
         }
         let totalChecks = UInt(configuration.connectivityURLs.count)
         let result = ConnectivityResult(path: path, successThreshold: configuration.successThreshold, totalChecks: totalChecks)
