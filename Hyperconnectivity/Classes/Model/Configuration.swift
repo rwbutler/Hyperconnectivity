@@ -16,6 +16,7 @@ public struct HyperconnectivityConfiguration {
     public static let defaultURLSessionConfiguration: URLSessionConfiguration = {
         let sessionConfiguration = URLSessionConfiguration.default
         sessionConfiguration.requestCachePolicy = .reloadIgnoringCacheData
+        sessionConfiguration.urlCache = nil
         sessionConfiguration.timeoutIntervalForRequest = 5.0
         sessionConfiguration.timeoutIntervalForResource = 5.0
         return sessionConfiguration
