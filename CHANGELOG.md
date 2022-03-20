@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.1] - 2022-03-20
+### Changed
+- Merged [PR #4](https://github.com/rwbutler/Hyperconnectivity/pull/4) to ensure that cached results are never used as part of connectivity checks.
+- Adjusted tests to pass both locally as well as on Travis CI.
+
 ## [1.1.0] - 2020-08-23
 ### Added
 - Compatibility with macOS, watchOS and tvOS via Swift Package Manager.

@@ -51,7 +51,7 @@ public class Hyperconnectivity {
 
 private extension Hyperconnectivity {
     private func checkConnectivity(of path: NWPath, using configuration: Configuration) {
-        // Ensure that we never use cached results, including with custom `URLSessionConfiguration`s.
+        // Ensure that we never use cached results, including where using a custom `URLSessionConfiguration`.
         let urlSessionConfiguration = configuration.urlSessionConfiguration.copy() as! URLSessionConfiguration
         urlSessionConfiguration.requestCachePolicy = .reloadIgnoringCacheData
         urlSessionConfiguration.urlCache = nil

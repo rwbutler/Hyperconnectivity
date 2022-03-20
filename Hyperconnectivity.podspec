@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Hyperconnectivity'
-  s.version          = '1.1.0'
+  s.version          = '1.1.1'
   s.swift_version    = '5.0'
   s.summary          = 'Modern replacement for Apple\'s Reachability written in Swift and made elegant using Combine'
   s.description      = <<-DESC
