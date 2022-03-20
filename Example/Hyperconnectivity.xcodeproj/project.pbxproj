@@ -10,6 +10,7 @@
 		0E0DB5B062AA610A7FB6B2F1 /* Pods_Hyperconnectivity_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5906C1669FAA2FD5D578F683 /* Pods_Hyperconnectivity_Tests.framework */; };
 		134B21BE2466DD5500A8F332 /* ConnectivityStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134B21BC2466DC7200A8F332 /* ConnectivityStateTests.swift */; };
 		134B21C1246877F300A8F332 /* ConnectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134B21BF2468779E00A8F332 /* ConnectionTests.swift */; };
+		134E807027E7AB2700C2A94A /* NonCachingURLSessionConfigurationFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134E806F27E7AB2700C2A94A /* NonCachingURLSessionConfigurationFactoryTests.swift */; };
 		13962F0A246F3F7300CCE8B9 /* ConnectivitySubscriptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13962F09246F3F7300CCE8B9 /* ConnectivitySubscriptionTests.swift */; };
 		13962F12247191B000CCE8B9 /* MockPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13962F11247191B000CCE8B9 /* MockPath.swift */; };
 		13962F142471929500CCE8B9 /* MockConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13962F132471929500CCE8B9 /* MockConnectivity.swift */; };
@@ -46,6 +47,7 @@
 /* Begin PBXFileReference section */
 		134B21BC2466DC7200A8F332 /* ConnectivityStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivityStateTests.swift; sourceTree = "<group>"; };
 		134B21BF2468779E00A8F332 /* ConnectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionTests.swift; sourceTree = "<group>"; };
+		134E806F27E7AB2700C2A94A /* NonCachingURLSessionConfigurationFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonCachingURLSessionConfigurationFactoryTests.swift; sourceTree = "<group>"; };
 		13962F09246F3F7300CCE8B9 /* ConnectivitySubscriptionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivitySubscriptionTests.swift; sourceTree = "<group>"; };
 		13962F11247191B000CCE8B9 /* MockPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPath.swift; sourceTree = "<group>"; };
 		13962F132471929500CCE8B9 /* MockConnectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockConnectivity.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				13962F222471AA1600CCE8B9 /* ConnectivityPublisherTests.swift */,
 				13C3D88E2471C36800E0A879 /* ReachabilityPublisherTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				134E806F27E7AB2700C2A94A /* NonCachingURLSessionConfigurationFactoryTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -428,6 +431,7 @@
 				13962F12247191B000CCE8B9 /* MockPath.swift in Sources */,
 				13962F232471AA1600CCE8B9 /* ConnectivityPublisherTests.swift in Sources */,
 				13962F142471929500CCE8B9 /* MockConnectivity.swift in Sources */,
+				134E807027E7AB2700C2A94A /* NonCachingURLSessionConfigurationFactoryTests.swift in Sources */,
 				13962F0A246F3F7300CCE8B9 /* ConnectivitySubscriptionTests.swift in Sources */,
 				13962F1A247196F800CCE8B9 /* ResponseContainsStringValidatorTests.swift in Sources */,
 				13962F18247196AE00CCE8B9 /* ResponseStringEqualityValidatorTests.swift in Sources */,

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0FC42EFC33490211CA83E3740D4E51E6 /* Compatibility.h in Headers */ = {isa = PBXBuildFile; fileRef = AC17B72B64B618B416CCA97514209F19 /* Compatibility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		134E806E27E7A9C700C2A94A /* NonCachingURLSessionConfigurationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134E806D27E7A9C600C2A94A /* NonCachingURLSessionConfigurationFactory.swift */; };
 		1B67C6B5AA3631D44A1131E24B223E80 /* Pods-Hyperconnectivity_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5302FE9DFF692B2E0E4DC36993AC06CD /* Pods-Hyperconnectivity_Tests-dummy.m */; };
 		1F7678DA34C83E57229D405CF3C011CB /* HTTPStubsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8752ED48BF48F46C57381CD46FB0C493 /* HTTPStubsResponse.m */; };
 		2442CE680DF66ACA774AFEB2ED40D3DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1233D20896561397787188965775C36 /* Foundation.framework */; };
@@ -86,6 +87,7 @@
 		0389F5918103E445BC3DBC43C114AEFC /* HTTPStubs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTTPStubs.h; path = Sources/OHHTTPStubs/include/HTTPStubs.h; sourceTree = "<group>"; };
 		053D11B7D73CF7BBCDF43E9700F9B90E /* ConnectivitySubscription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConnectivitySubscription.swift; sourceTree = "<group>"; };
 		05795D80F7ADBF5F4A6F778B7729A2F6 /* HTTPStubsPathHelpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTTPStubsPathHelpers.m; path = Sources/OHHTTPStubs/HTTPStubsPathHelpers.m; sourceTree = "<group>"; };
+		134E806D27E7A9C600C2A94A /* NonCachingURLSessionConfigurationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonCachingURLSessionConfigurationFactory.swift; sourceTree = "<group>"; };
 		179D4DB955D6AC3900B45340DC1B3C34 /* Hyperconnectivity-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Hyperconnectivity-prefix.pch"; sourceTree = "<group>"; };
 		17E33041B314FA837A3CAEB9DF3CDE9F /* OHHTTPStubs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OHHTTPStubs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AC9AAE6418AF877A38D1FDCBC620BE5 /* NSURLRequest+HTTPBodyTesting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLRequest+HTTPBodyTesting.h"; path = "Sources/OHHTTPStubs/include/NSURLRequest+HTTPBodyTesting.h"; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				FA9463D8F662E3C593D138C0EF30368B /* ConnectivityPublisher.swift */,
+				134E806D27E7A9C600C2A94A /* NonCachingURLSessionConfigurationFactory.swift */,
 				053D11B7D73CF7BBCDF43E9700F9B90E /* ConnectivitySubscription.swift */,
 				636DF3058B92AF46A526983B670D61A7 /* Publishers.swift */,
 				D8EFC716F104B05931D57CDB03A4E800 /* ReachabilityPublisher.swift */,
@@ -706,6 +709,7 @@
 				ED8B64E2B4A4B5062F89BAF796F8F82A /* ReachabilitySubscription.swift in Sources */,
 				A24A6BF84B18AC56E507150BAD9E2A04 /* ResponseContainsStringValidator.swift in Sources */,
 				8F263F50193BCB276814CA4A9BB280E5 /* ResponseRegExValidator.swift in Sources */,
+				134E806E27E7A9C700C2A94A /* NonCachingURLSessionConfigurationFactory.swift in Sources */,
 				938E4F20E814D8DD128E28D85704EAA9 /* ResponseStringEqualityValidator.swift in Sources */,
 				F5B0B86C50A6C63A12F0E358D0048D7A /* ResponseStringValidator.swift in Sources */,
 				7175F8664E96DAD0709FC90DED4AB821 /* ResponseValidator.swift in Sources */,
