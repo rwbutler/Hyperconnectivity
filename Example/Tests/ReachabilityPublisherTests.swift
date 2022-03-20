@@ -20,7 +20,7 @@ class ReachabilityPublisherTests: XCTestCase {
         let expectation = XCTestExpectation(description: "Reachability check succeeds")
         cancellable = Publishers.Reachability().sink(receiveCompletion: { _ in
         }, receiveValue: { result in
-            XCTAssertEqual(result.connection, .wifi)
+            XCTAssert(result.connection == .wifi || result.connection == .ethernet)
             XCTAssertTrue(result.isReachable)
             expectation.fulfill()
         })

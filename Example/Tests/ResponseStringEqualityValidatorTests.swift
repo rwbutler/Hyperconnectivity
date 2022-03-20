@@ -33,7 +33,7 @@ class ResponseStringEqualityValidatorTests: XCTestCase {
         let config = Hyperconnectivity.Configuration(responseValidator: ResponseStringEqualityValidator(expectedResponse: "Success"))
         let connectivity = Hyperconnectivity(configuration: config)
         let connectivityChanged: (ConnectivityResult) -> Void = { result in
-            XCTAssert(result.state == .wifiWithInternet)
+            XCTAssert(result.state == .wifiWithInternet || result.state == .ethernetWithInternet)
             expectation.fulfill()
         }
         connectivity.connectivityChanged = connectivityChanged
@@ -49,7 +49,7 @@ class ResponseStringEqualityValidatorTests: XCTestCase {
         let config = Hyperconnectivity.Configuration(responseValidator: ResponseStringEqualityValidator(expectedResponse: "Success"))
         let connectivity = Hyperconnectivity(configuration: config)
         let connectivityChanged: (ConnectivityResult) -> Void = { result in
-            XCTAssert(result.state == .wifiWithInternet)
+            XCTAssert(result.state == .wifiWithInternet || result.state == .ethernetWithInternet)
             expectation.fulfill()
         }
         connectivity.connectivityChanged = connectivityChanged
@@ -65,7 +65,7 @@ class ResponseStringEqualityValidatorTests: XCTestCase {
         let config = Hyperconnectivity.Configuration(responseValidator: ResponseStringEqualityValidator(expectedResponse: "Success"))
         let connectivity = Hyperconnectivity(configuration: config)
         let connectivityChanged: (ConnectivityResult) -> Void = { result in
-            XCTAssert(result.state == .wifiWithoutInternet)
+            XCTAssert(result.state == .wifiWithoutInternet || result.state == .ethernetWithoutInternet)
             expectation.fulfill()
         }
         connectivity.connectivityChanged = connectivityChanged

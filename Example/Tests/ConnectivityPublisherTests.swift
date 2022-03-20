@@ -35,7 +35,7 @@ class ConnectivityPublisherTests: XCTestCase {
         let expectation = XCTestExpectation(description: "Connectivity check succeeds")
         cancellable = Hyperconnectivity.Publisher().sink(receiveCompletion: { _ in
         }, receiveValue: { result in
-            XCTAssertEqual(result.state, .wifiWithInternet)
+            XCTAssert(result.state == .wifiWithInternet || result.state == .ethernetWithInternet)
             expectation.fulfill()
         })
         wait(for: [expectation], timeout: timeout)
@@ -48,7 +48,7 @@ class ConnectivityPublisherTests: XCTestCase {
         cancellable = Hyperconnectivity.Publisher().sink(receiveCompletion: { _ in
         }, receiveValue: { result in
             print(result.state.description)
-            XCTAssertEqual(result.state, .wifiWithoutInternet)
+            XCTAssert(result.state == .wifiWithoutInternet || result.state == .ethernetWithoutInternet)
             expectation.fulfill()
         })
         wait(for: [expectation], timeout: timeout)
