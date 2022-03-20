@@ -34,13 +34,7 @@ public class Hyperconnectivity {
         let configuration = self.configuration
         let pathMonitor = NWPathMonitor()
         pathMonitor.pathUpdateHandler = { [weak self] path in
-            guard let strongSelf = self else {
-                return
-            }
-            strongSelf.handleReachability(for: path)
-            if configuration.shouldCheckConnectivity {
-                strongSelf.checkConnectivity(of: path, using: configuration)
-            }
+            self?.pathUpdated(path, with: configuration)
         }
         self.pathMonitor = pathMonitor
         notifier.post(name: .ConnectivityDidStart, object: nil)
@@ -88,5 +82,13 @@ private extension Hyperconnectivity {
     private func handleReachability(for path: NWPath) {
         let result = ReachabilityResult(path: path)
         reachabilityChanged?(result)
+    }
+    
+    /// Invoked on `NWPath` change by `pathUpdateHandler`.
+    private func pathUpdated(_ path: NWPath, with configuration: Configuration) {
+        handleReachability(for: path)
+        if configuration.shouldCheckConnectivity {
+            checkConnectivity(of: path, using: configuration)
+        }
     }
 }
