@@ -71,7 +71,9 @@ private extension Hyperconnectivity {
     }
     
     private func connectivityChanged(_ result: ConnectivityResult) {
-        connectivityChanged?(result)
+        configuration.callbackQueue.async { [weak self] in
+            self?.connectivityChanged?(result)
+        }
         cancellable?.cancel()
         notifier.post(name: .ConnectivityDidChange, object: result)
     }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class ResponseStringEqualityValidator: ResponseValidator {
+public struct ResponseStringEqualityValidator: ResponseValidator {
     
     /// The `String` expected as the response
     public let expectedResponse: String

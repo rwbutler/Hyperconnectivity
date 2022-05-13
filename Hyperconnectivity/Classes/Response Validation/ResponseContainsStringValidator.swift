@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class ResponseContainsStringValidator: ResponseValidator {
+public struct ResponseContainsStringValidator: ResponseValidator {
     
     /// The `String` expected to be contained in the response
     public let expectedResponse: String

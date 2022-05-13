@@ -25,6 +25,8 @@
 		13962F252471B48700CCE8B9 /* failure-response.html in Resources */ = {isa = PBXBuildFile; fileRef = 13962F242471B48700CCE8B9 /* failure-response.html */; };
 		13C3D88F2471C36800E0A879 /* ReachabilityPublisherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C3D88E2471C36800E0A879 /* ReachabilityPublisherTests.swift */; };
 		13EDCA922465DDFB006FAE75 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EDCA912465DDFB006FAE75 /* UIColor.swift */; };
+		30C46A03282EAB3300D59563 /* ConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C46A02282EAB3300D59563 /* ConfigurationTests.swift */; };
+		30C46A05282EC29300D59563 /* MockResponseValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C46A04282EC29300D59563 /* MockResponseValidator.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -60,6 +62,8 @@
 		13962F242471B48700CCE8B9 /* failure-response.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "failure-response.html"; sourceTree = "<group>"; };
 		13C3D88E2471C36800E0A879 /* ReachabilityPublisherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityPublisherTests.swift; sourceTree = "<group>"; };
 		13EDCA912465DDFB006FAE75 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		30C46A02282EAB3300D59563 /* ConfigurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationTests.swift; sourceTree = "<group>"; };
+		30C46A04282EC29300D59563 /* MockResponseValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockResponseValidator.swift; sourceTree = "<group>"; };
 		3CA628B2EBED9449AB582CF5 /* Pods-Hyperconnectivity_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hyperconnectivity_Tests.release.xcconfig"; path = "Target Support Files/Pods-Hyperconnectivity_Tests/Pods-Hyperconnectivity_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5906C1669FAA2FD5D578F683 /* Pods_Hyperconnectivity_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hyperconnectivity_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DAEB079CF13776E26B7C9D7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -106,6 +110,7 @@
 			children = (
 				13962F132471929500CCE8B9 /* MockConnectivity.swift */,
 				13962F11247191B000CCE8B9 /* MockPath.swift */,
+				30C46A04282EC29300D59563 /* MockResponseValidator.swift */,
 			);
 			name = Mocks;
 			sourceTree = "<group>";
@@ -176,16 +181,17 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				13962F102471919F00CCE8B9 /* Mocks */,
-				13962F212471A95F00CCE8B9 /* Response Validation Tests */,
+				30C46A02282EAB3300D59563 /* ConfigurationTests.swift */,
 				134B21BF2468779E00A8F332 /* ConnectionTests.swift */,
-				134B21BC2466DC7200A8F332 /* ConnectivityStateTests.swift */,
-				607FACEB1AFB9204008FA782 /* PercentageTests.swift */,
-				13962F09246F3F7300CCE8B9 /* ConnectivitySubscriptionTests.swift */,
 				13962F222471AA1600CCE8B9 /* ConnectivityPublisherTests.swift */,
-				13C3D88E2471C36800E0A879 /* ReachabilityPublisherTests.swift */,
-				607FACE91AFB9204008FA782 /* Supporting Files */,
+				134B21BC2466DC7200A8F332 /* ConnectivityStateTests.swift */,
+				13962F09246F3F7300CCE8B9 /* ConnectivitySubscriptionTests.swift */,
+				13962F102471919F00CCE8B9 /* Mocks */,
 				134E806F27E7AB2700C2A94A /* NonCachingURLSessionConfigurationFactoryTests.swift */,
+				607FACEB1AFB9204008FA782 /* PercentageTests.swift */,
+				13C3D88E2471C36800E0A879 /* ReachabilityPublisherTests.swift */,
+				13962F212471A95F00CCE8B9 /* Response Validation Tests */,
+				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -432,6 +438,7 @@
 				13962F232471AA1600CCE8B9 /* ConnectivityPublisherTests.swift in Sources */,
 				13962F142471929500CCE8B9 /* MockConnectivity.swift in Sources */,
 				134E807027E7AB2700C2A94A /* NonCachingURLSessionConfigurationFactoryTests.swift in Sources */,
+				30C46A05282EC29300D59563 /* MockResponseValidator.swift in Sources */,
 				13962F0A246F3F7300CCE8B9 /* ConnectivitySubscriptionTests.swift in Sources */,
 				13962F1A247196F800CCE8B9 /* ResponseContainsStringValidatorTests.swift in Sources */,
 				13962F18247196AE00CCE8B9 /* ResponseStringEqualityValidatorTests.swift in Sources */,
@@ -439,6 +446,7 @@
 				13962F162471968300CCE8B9 /* ResponseRegExValidatorTests.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* PercentageTests.swift in Sources */,
 				134B21C1246877F300A8F332 /* ConnectionTests.swift in Sources */,
+				30C46A03282EAB3300D59563 /* ConfigurationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,7 +593,7 @@
 				INFOPLIST_FILE = Hyperconnectivity/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.2.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rwbutler.demo.Hyperconnectivity-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -602,7 +610,7 @@
 				INFOPLIST_FILE = Hyperconnectivity/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.2.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rwbutler.demo.Hyperconnectivity-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";

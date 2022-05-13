@@ -31,8 +31,8 @@ extension ViewController {
 private extension ViewController {
     func startConnectivityChecks() {
         activityIndicator.startAnimating()
-        cancellable = Hyperconnectivity.Publisher()
-            .receive(on: DispatchQueue.main)
+        let configuration = HyperconnectivityConfiguration()
+        cancellable = Hyperconnectivity.Publisher(configuration: configuration)
             .eraseToAnyPublisher()
             .sink(receiveCompletion: { [weak self] _ in
                 self?.stopConnectivityChecks()

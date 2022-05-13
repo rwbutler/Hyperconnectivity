@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class ResponseStringValidator: ResponseValidator {
+public struct ResponseStringValidator: ResponseValidator {
     
     public enum ValidationMode: Int {
         case containsExpectedResponseString

@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class ResponseRegExValidator: ResponseValidator {
+public struct ResponseRegExValidator: ResponseValidator {
     
     public static let defaultRegularExpression = ".*?<BODY>.*?Success.*?</BODY>.*"
     

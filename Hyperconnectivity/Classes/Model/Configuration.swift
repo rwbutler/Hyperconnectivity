@@ -7,11 +7,13 @@
 
 import Foundation
 
-public struct HyperconnectivityConfiguration {
+typealias Configuration = HyperconnectivityConfiguration // For internal use.
+
+public class HyperconnectivityConfiguration {
     public static let defaultConnectivityURLs = [
         URL(string: "https://www.apple.com/library/test/success.html"),
         URL(string: "https://captive.apple.com/hotspot-detect.html")
-        ]
+    ]
         .compactMap { $0 }
     public static let defaultURLSessionConfiguration: URLSessionConfiguration = {
         let sessionConfiguration = URLSessionConfiguration.default
@@ -25,34 +27,43 @@ public struct HyperconnectivityConfiguration {
     let callbackQueue: DispatchQueue
     let connectivityQueue: DispatchQueue
     let connectivityURLs: [URL]
-    let responseValidator: ResponseValidator
+    private (set) var pollingInterval: Double
+    private (set) var  pollingIsEnabled: Bool
+    private (set) var  pollWhileOfflineOnly: Bool
+    private (set) var responseValidator: ResponseValidator
     let shouldCheckConnectivity: Bool
     
     /// % successful connections required to be deemed to have connectivity
     let successThreshold: Percentage
-    let urlSessionConfiguration: URLSessionConfiguration
+    private (set) var urlSessionConfiguration: URLSessionConfiguration
     
-    public init(callbackQueue: DispatchQueue = DispatchQueue.main,
-                connectivityQueue: DispatchQueue = DispatchQueue.global(qos: .utility),
-                connectivityURLs: [URL] = Self.defaultConnectivityURLs,
-                responseValidator: ResponseValidator? = nil,
-                shouldCheckConnectivity: Bool = true,
-                successThreshold: Percentage = Percentage(50.0),
-                urlSessionConfiguration: URLSessionConfiguration = Self.defaultURLSessionConfiguration
-    ) {
-        let defaultValidator = ResponseStringValidator(
+    public init(
+        callbackQueue: DispatchQueue = DispatchQueue.main,
+        connectivityQueue: DispatchQueue = DispatchQueue.global(qos: .default),
+        connectivityURLs: [URL] = defaultConnectivityURLs,
+        pollingInterval: Double = 10.0,
+        pollingIsEnabled: Bool = true,
+        pollWhileOfflineOnly: Bool = true,
+        responseValidator: ResponseValidator = ResponseStringValidator(
             validationMode: .containsExpectedResponseString
-        )
+        ),
+        shouldCheckConnectivity: Bool = true,
+        successThreshold: Percentage = Percentage(50.0),
+        urlSessionConfiguration: URLSessionConfiguration = defaultURLSessionConfiguration
+    ) {
         self.callbackQueue = callbackQueue
         self.connectivityQueue = connectivityQueue
         self.connectivityURLs = connectivityURLs
-        self.responseValidator = responseValidator ?? defaultValidator
+        self.pollingInterval = pollingInterval
+        self.pollingIsEnabled = pollingIsEnabled
+        self.pollWhileOfflineOnly = pollWhileOfflineOnly
+        self.responseValidator = responseValidator
         self.shouldCheckConnectivity = shouldCheckConnectivity
         self.successThreshold = successThreshold
         self.urlSessionConfiguration = urlSessionConfiguration
     }
     
-    func cloneForReachability() -> Self {
+    func cloneForReachability() -> HyperconnectivityConfiguration {
         return HyperconnectivityConfiguration(
             callbackQueue: callbackQueue,
             connectivityQueue: connectivityQueue,
@@ -60,7 +71,31 @@ public struct HyperconnectivityConfiguration {
             responseValidator: responseValidator,
             shouldCheckConnectivity: false,
             successThreshold: Percentage(0.0),
-            urlSessionConfiguration: urlSessionConfiguration)
+            urlSessionConfiguration: urlSessionConfiguration
+        )
+        .configurePolling(isEnabled: false)
+    }
+    
+    public func configurePolling(isEnabled: Bool = true, interval: Double = 10.0, offlineOnly: Bool = true) -> Self {
+        pollingIsEnabled = isEnabled
+        pollingInterval = interval
+        pollWhileOfflineOnly = offlineOnly
+        return self
+    }
+    
+    public func configureResponseValidation(_ validation: ResponseStringValidator.ValidationMode, expected: String) -> Self {
+        responseValidator = ResponseStringValidator(validationMode: validation, expectedResponse: expected)
+        return self
+    }
+    
+    public func configureResponseValidator(_ responseValidator: ResponseValidator) -> Self {
+        self.responseValidator = responseValidator
+        return self
+    }
+    
+    public func configureURLSession(_ urlSessionConfiguration: URLSessionConfiguration) -> Self {
+        self.urlSessionConfiguration = urlSessionConfiguration
+        return self
     }
     
     /// Convenience method for determining whether or not the response is valid.
