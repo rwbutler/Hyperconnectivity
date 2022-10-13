@@ -2,7 +2,7 @@
 //  ConnectivityLink.swift
 //  Hyperconnectivity
 //
-//  Created by Bruno Miguns on 13/10/2022.
+//  Created by Bruno Miguens on 13/10/2022.
 //
 
 import Foundation
