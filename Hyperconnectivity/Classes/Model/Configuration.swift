@@ -8,11 +8,13 @@
 import Foundation
 
 public struct HyperconnectivityConfiguration {
-    public static let defaultConnectivityURLs = [
+    public static let defaultConnectivityLinks: [ConnectivityLink] = [
         URL(string: "https://www.apple.com/library/test/success.html"),
         URL(string: "https://captive.apple.com/hotspot-detect.html")
-        ]
-        .compactMap { $0 }
+    ].compactMap { url in
+        guard let url = url else { return nil }
+        return .url(url)
+    }
     public static let defaultURLSessionConfiguration: URLSessionConfiguration = {
         let sessionConfiguration = URLSessionConfiguration.default
         sessionConfiguration.requestCachePolicy = .reloadIgnoringCacheData
@@ -24,7 +26,7 @@ public struct HyperconnectivityConfiguration {
     
     let callbackQueue: DispatchQueue
     let connectivityQueue: DispatchQueue
-    let connectivityURLs: [URL]
+    let connectivityLinks: [ConnectivityLink]
     let responseValidator: ResponseValidator
     let shouldCheckConnectivity: Bool
     
@@ -34,7 +36,7 @@ public struct HyperconnectivityConfiguration {
     
     public init(callbackQueue: DispatchQueue = DispatchQueue.main,
                 connectivityQueue: DispatchQueue = DispatchQueue.global(qos: .utility),
-                connectivityURLs: [URL] = Self.defaultConnectivityURLs,
+                connectivityLinks: [ConnectivityLink] = Self.defaultConnectivityLinks,
                 responseValidator: ResponseValidator? = nil,
                 shouldCheckConnectivity: Bool = true,
                 successThreshold: Percentage = Percentage(50.0),
@@ -45,7 +47,7 @@ public struct HyperconnectivityConfiguration {
         )
         self.callbackQueue = callbackQueue
         self.connectivityQueue = connectivityQueue
-        self.connectivityURLs = connectivityURLs
+        self.connectivityLinks = connectivityLinks
         self.responseValidator = responseValidator ?? defaultValidator
         self.shouldCheckConnectivity = shouldCheckConnectivity
         self.successThreshold = successThreshold
@@ -56,7 +58,7 @@ public struct HyperconnectivityConfiguration {
         return HyperconnectivityConfiguration(
             callbackQueue: callbackQueue,
             connectivityQueue: connectivityQueue,
-            connectivityURLs: [],
+            connectivityLinks: [],
             responseValidator: responseValidator,
             shouldCheckConnectivity: false,
             successThreshold: Percentage(0.0),

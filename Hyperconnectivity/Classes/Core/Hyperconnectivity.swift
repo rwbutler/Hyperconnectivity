@@ -53,10 +53,10 @@ private extension Hyperconnectivity {
     private func checkConnectivity(of path: NWPath, using configuration: Configuration) {
         let factory = NonCachingURLSessionConfigurationFactory()
         let urlSessionConfiguration = factory.urlSessionConfiguration(from: configuration.urlSessionConfiguration)
-        let publishers = configuration.connectivityURLs.map { url in
-            URLSession(configuration: urlSessionConfiguration).dataTaskPublisher(for: url)
+        let publishers = configuration.connectivityLinks.map { link in
+            URLSession(configuration: urlSessionConfiguration).dataTaskPublisher(for: link)
         }
-        let totalChecks = UInt(configuration.connectivityURLs.count)
+        let totalChecks = UInt(configuration.connectivityLinks.count)
         let result = ConnectivityResult(path: path, successThreshold: configuration.successThreshold, totalChecks: totalChecks)
         let combinedPublisher = Publishers.MergeMany(publishers)
         cancellable = combinedPublisher.sink(receiveCompletion:{ [weak self] _ in
