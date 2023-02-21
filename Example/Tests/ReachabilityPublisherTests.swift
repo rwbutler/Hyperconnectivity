@@ -8,7 +8,9 @@
 
 import Combine
 import Foundation
-import OHHTTPStubs
+#if canImport(OHHTTPStubsSwift)
+import OHHTTPStubsSwift
+#endif
 import XCTest
 @testable import Hyperconnectivity
 

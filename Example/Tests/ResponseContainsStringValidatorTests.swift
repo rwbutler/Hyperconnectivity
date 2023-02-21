@@ -8,6 +8,9 @@
 
 import Foundation
 import OHHTTPStubs
+#if canImport(OHHTTPStubsSwift)
+import OHHTTPStubsSwift
+#endif
 import XCTest
 @testable import Hyperconnectivity
 
@@ -20,7 +23,16 @@ class ResponseContainsStringValidatorTests: XCTestCase {
     }
     
     private func stubHost(_ host: String, withHTMLFrom fileName: String) throws {
-        let stubPath = try XCTUnwrap(OHPathForFile(fileName, type(of: self)))
+#if SWIFT_PACKAGE
+        let bundle = Bundle.module
+#else
+        let bundle = Bundle(for: type(of: self))
+#endif
+        let fileURL = bundle.url(
+            forResource: (fileName as NSString).deletingPathExtension,
+            withExtension: (fileName as NSString).pathExtension
+        )
+        let stubPath = try XCTUnwrap(fileURL?.relativePath)
         stub(condition: isHost(host)) { _ in
             return fixture(filePath: stubPath, headers: ["Content-Type": "text/html"])
         }
