@@ -11,8 +11,8 @@ public struct HyperconnectivityConfiguration {
     public static let defaultConnectivityURLs = [
         URL(string: "https://www.apple.com/library/test/success.html"),
         URL(string: "https://captive.apple.com/hotspot-detect.html")
-        ]
-        .compactMap { $0 }
+    ].compactMap { $0 }
+    
     public static let defaultURLSessionConfiguration: URLSessionConfiguration = {
         let sessionConfiguration = URLSessionConfiguration.default
         sessionConfiguration.requestCachePolicy = .reloadIgnoringCacheData
@@ -24,7 +24,7 @@ public struct HyperconnectivityConfiguration {
     
     let callbackQueue: DispatchQueue
     let connectivityQueue: DispatchQueue
-    let connectivityURLs: [URL]
+    let connectivityURLRequests: [URLRequest]
     let responseValidator: ResponseValidator
     let shouldCheckConnectivity: Bool
     
@@ -32,20 +32,42 @@ public struct HyperconnectivityConfiguration {
     let successThreshold: Percentage
     let urlSessionConfiguration: URLSessionConfiguration
     
-    public init(callbackQueue: DispatchQueue = DispatchQueue.main,
-                connectivityQueue: DispatchQueue = DispatchQueue.global(qos: .utility),
-                connectivityURLs: [URL] = Self.defaultConnectivityURLs,
-                responseValidator: ResponseValidator? = nil,
-                shouldCheckConnectivity: Bool = true,
-                successThreshold: Percentage = Percentage(50.0),
-                urlSessionConfiguration: URLSessionConfiguration = Self.defaultURLSessionConfiguration
+    public init(
+        callbackQueue: DispatchQueue = DispatchQueue.main,
+        connectivityQueue: DispatchQueue = DispatchQueue.global(qos: .utility),
+        connectivityURLs: [URL] = Self.defaultConnectivityURLs,
+        responseValidator: ResponseValidator? = nil,
+        shouldCheckConnectivity: Bool = true,
+        successThreshold: Percentage = Percentage(50.0),
+        urlSessionConfiguration: URLSessionConfiguration = Self.defaultURLSessionConfiguration
     ) {
         let defaultValidator = ResponseStringValidator(
             validationMode: .containsExpectedResponseString
         )
         self.callbackQueue = callbackQueue
         self.connectivityQueue = connectivityQueue
-        self.connectivityURLs = connectivityURLs
+        self.connectivityURLRequests = connectivityURLs.map { URLRequest(url: $0) }
+        self.responseValidator = responseValidator ?? defaultValidator
+        self.shouldCheckConnectivity = shouldCheckConnectivity
+        self.successThreshold = successThreshold
+        self.urlSessionConfiguration = urlSessionConfiguration
+    }
+    
+    public init(
+        callbackQueue: DispatchQueue = DispatchQueue.main,
+        connectivityQueue: DispatchQueue = DispatchQueue.global(qos: .utility),
+        connectivityURLRequests: [URLRequest],
+        responseValidator: ResponseValidator? = nil,
+        shouldCheckConnectivity: Bool = true,
+        successThreshold: Percentage = Percentage(50.0),
+        urlSessionConfiguration: URLSessionConfiguration = Self.defaultURLSessionConfiguration
+    ) {
+        let defaultValidator = ResponseStringValidator(
+            validationMode: .containsExpectedResponseString
+        )
+        self.callbackQueue = callbackQueue
+        self.connectivityQueue = connectivityQueue
+        self.connectivityURLRequests = connectivityURLRequests
         self.responseValidator = responseValidator ?? defaultValidator
         self.shouldCheckConnectivity = shouldCheckConnectivity
         self.successThreshold = successThreshold
