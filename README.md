@@ -1,6 +1,6 @@
-![Hyperconnectivity](https://github.com/rwbutler/Hyperconnectivity/raw/master/docs/images/hyperconnectivity-banner.png)
+![Hyperconnectivity](https://github.com/rwbutler/Hyperconnectivity/raw/main/docs/images/hyperconnectivity-banner.png)
 
-[![Build Status](https://app.travis-ci.com/rwbutler/Hyperconnectivity.svg?branch=master)](https://app.travis-ci.com/rwbutler/Hyperconnectivity)
+[![Build Status](https://app.travis-ci.com/rwbutler/Hyperconnectivity.svg?branch=main)](https://app.travis-ci.com/rwbutler/Hyperconnectivity)
 [![Version](https://img.shields.io/cocoapods/v/Hyperconnectivity.svg?style=flat)](http://cocoapods.org/pods/Hyperconnectivity)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/Connectivity.svg?style=flat)](http://cocoapods.org/pods/Connectivity)
@@ -49,7 +49,7 @@ cancellable = Hyperconnectivity.Publisher()
 	})
 ```
 
-For a full example, see the example [`UIViewController`](https://github.com/rwbutler/Hyperconnectivity/blob/master/Example/Hyperconnectivity/ViewController.swift) in the sample app.
+For a full example, see the example [`UIViewController`](https://github.com/rwbutler/Hyperconnectivity/blob/main/Example/Hyperconnectivity/ViewController.swift) in the sample app.
 
 ## Connectivity vs Hyperconnectivity
 
@@ -66,7 +66,7 @@ Connectivity was designed to provide a familiar API to users of Apple's Reachabi
 The table below will be updated as future releases of Hyperconnectivity bring the framework towards feature parity with Connectivity.
 
 <div align="center">
-    <img src="https://github.com/rwbutler/Hyperconnectivity/raw/master/docs/images/comparison-with-connectivity.png" alt="Comparison with Connectivity Table" width="80%">
+    <img src="https://github.com/rwbutler/Hyperconnectivity/raw/main/docs/images/comparison-with-connectivity.png" alt="Comparison with Connectivity Table" width="80%">
 </div>
 
 ## Installation
@@ -127,13 +127,13 @@ https://github.com/rwbutler/hyperconnectivity
 After verifying the URL, Xcode will prompt you to select whether to pull a specific branch, commit or versioned release into your project. 
 
 <div align="center">
-    <img src="https://github.com/rwbutler/Connectivity/raw/master/docs/images/package-options.png" alt="Xcode 11 Package Options" width="80%">
+    <img src="https://github.com/rwbutler/Connectivity/raw/main/docs/images/package-options.png" alt="Xcode 11 Package Options" width="80%">
 </div>
 
 Proceed to the next step by where you will be asked to select the package product to integrate into a target. There will be a single package product named `Hyperconnectivity` which should be pre-selected. Ensure that your main app target is selected from the rightmost column of the dialog then click Finish to complete the integration.
 
 <div align="center">
-    <img src="https://github.com/rwbutler/Connectivity/raw/master/docs/images/add-package.png" alt="Xcode 11 Add Package" width="80%">
+    <img src="https://github.com/rwbutler/Connectivity/raw/main/docs/images/add-package.png" alt="Xcode 11 Add Package" width="80%">
 </div>
 
 ## How It Works
@@ -170,7 +170,7 @@ By default, Hyperconnectivity contacts a number of endpoints already used by iOS
 
 ## Usage
 
-For an example of how to use Hyperconnectivity, see the sample app in the [Example](./Example) directory. The provided example [`UIViewController`](https://github.com/rwbutler/Hyperconnectivity/blob/master/Example/Hyperconnectivity/ViewController.swift) illustrates how the publisher can be used to update your UI.
+For an example of how to use Hyperconnectivity, see the sample app in the [Example](./Example) directory. The provided example [`UIViewController`](https://github.com/rwbutler/Hyperconnectivity/blob/main/Example/Hyperconnectivity/ViewController.swift) illustrates how the publisher can be used to update your UI.
 
 ## FAQs
 
@@ -220,7 +220,7 @@ Hyperconnectivity is available under the MIT license. See the [LICENSE file](./L
 
 |[Cheats](https://github.com/rwbutler/Cheats) |[Connectivity](https://github.com/rwbutler/Connectivity) | [FeatureFlags](https://github.com/rwbutler/FeatureFlags) | [Hyperconnectivity](https://github.com/rwbutler/Hyperconnectivity) | [Skylark](https://github.com/rwbutler/Skylark) | [TypographyKit](https://github.com/rwbutler/TypographyKit) | [Updates](https://github.com/rwbutler/Updates) |
 |:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
-|[![Cheats](https://raw.githubusercontent.com/rwbutler/Cheats/master/docs/images/cheats-logo.png)](https://github.com/rwbutler/Cheats) |[![Connectivity](https://github.com/rwbutler/Connectivity/raw/master/ConnectivityLogo.png)](https://github.com/rwbutler/Connectivity) | [![FeatureFlags](https://raw.githubusercontent.com/rwbutler/FeatureFlags/master/docs/images/feature-flags-logo.png)](https://github.com/rwbutler/FeatureFlags) | [![Hyperconnectivity](https://raw.githubusercontent.com/rwbutler/Hyperconnectivity/master/docs/images/hyperconnectivity-logo.png)](https://github.com/rwbutler/Hyperconnectivity) | [![Skylark](https://github.com/rwbutler/Skylark/raw/master/SkylarkLogo.png)](https://github.com/rwbutler/Skylark) | [![TypographyKit](https://raw.githubusercontent.com/rwbutler/TypographyKit/master/docs/images/typography-kit-logo.png)](https://github.com/rwbutler/TypographyKit) | [![Updates](https://raw.githubusercontent.com/rwbutler/Updates/master/docs/images/updates-logo.png)](https://github.com/rwbutler/Updates)
+|[![Cheats](https://raw.githubusercontent.com/rwbutler/Cheats/master/docs/images/cheats-logo.png)](https://github.com/rwbutler/Cheats) |[![Connectivity](https://github.com/rwbutler/Connectivity/raw/master/ConnectivityLogo.png)](https://github.com/rwbutler/Connectivity) | [![FeatureFlags](https://raw.githubusercontent.com/rwbutler/FeatureFlags/master/docs/images/feature-flags-logo.png)](https://github.com/rwbutler/FeatureFlags) | [![Hyperconnectivity](https://raw.githubusercontent.com/rwbutler/Hyperconnectivity/main/docs/images/hyperconnectivity-logo.png)](https://github.com/rwbutler/Hyperconnectivity) | [![Skylark](https://github.com/rwbutler/Skylark/raw/master/SkylarkLogo.png)](https://github.com/rwbutler/Skylark) | [![TypographyKit](https://raw.githubusercontent.com/rwbutler/TypographyKit/master/docs/images/typography-kit-logo.png)](https://github.com/rwbutler/TypographyKit) | [![Updates](https://raw.githubusercontent.com/rwbutler/Updates/master/docs/images/updates-logo.png)](https://github.com/rwbutler/Updates)
 
 ### Tools
 
