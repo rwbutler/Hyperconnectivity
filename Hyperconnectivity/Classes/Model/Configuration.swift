@@ -41,16 +41,15 @@ public struct HyperconnectivityConfiguration {
         successThreshold: Percentage = Percentage(50.0),
         urlSessionConfiguration: URLSessionConfiguration = Self.defaultURLSessionConfiguration
     ) {
-        let defaultValidator = ResponseStringValidator(
-            validationMode: .containsExpectedResponseString
+        self.init(
+            callbackQueue: callbackQueue,
+            connectivityQueue: connectivityQueue,
+            connectivityURLRequests: connectivityURLs.map { URLRequest(url: $0) },
+            responseValidator: responseValidator,
+            shouldCheckConnectivity: shouldCheckConnectivity,
+            successThreshold: successThreshold,
+            urlSessionConfiguration: urlSessionConfiguration
         )
-        self.callbackQueue = callbackQueue
-        self.connectivityQueue = connectivityQueue
-        self.connectivityURLRequests = connectivityURLs.map { URLRequest(url: $0) }
-        self.responseValidator = responseValidator ?? defaultValidator
-        self.shouldCheckConnectivity = shouldCheckConnectivity
-        self.successThreshold = successThreshold
-        self.urlSessionConfiguration = urlSessionConfiguration
     }
     
     public init(
