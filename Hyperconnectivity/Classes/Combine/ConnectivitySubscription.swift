@@ -40,7 +40,9 @@ private extension ConnectivitySubscription {
     
     private func startNotifier(with subscriber: S) {
         connectivity = connectivity ?? Hyperconnectivity(configuration: configuration)
-        let connectivityChanged: (ConnectivityResult) -> Void = { connectivity in
+        let connectivityChanged: (ConnectivityResult) -> Void = { [weak self] connectivity in
+            guard let self else { return }
+            
             _ = subscriber.receive(connectivity)
         }
         connectivity?.connectivityChanged = connectivityChanged
